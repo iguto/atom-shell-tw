@@ -1,6 +1,18 @@
 doctype html
-html
+html ng-app="atomShellTw"
   head
+
     title Hello atom-shell
-  body
+  body ng-controller="mainCtrl"
     h1 hello atom-shell
+
+    pre
+      | {{sample}}
+
+    / script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+    script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"
+    script src='angular/app.js'
+    script src='angular/controller/main.js'
+
+javascript:
+  console.log("hoge");
